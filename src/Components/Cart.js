@@ -59,28 +59,28 @@ function Cart() {
             <Text color={textColor}>PYWA0000048F</Text>
           </VStack>
           <Heading size="sm" textAlign="end">
-            $199.00
+            ₹199.00
           </Heading>
         </Stack>
       </HStack>
       <VStack spacing={4} alignItems="stretch" w="full">
         <HStack justifyContent="space-between">
           <Text color={textColor}>Subtotal</Text>
-          <Heading size="sm">$119.00</Heading>
+          <Heading size="sm">₹119.00</Heading>
         </HStack>
         <HStack justifyContent="space-between">
           <Text color={textColor}>Shipping</Text>
-          <Heading size="sm">$19.99</Heading>
+          <Heading size="sm">₹19.99</Heading>
         </HStack>
         <HStack justifyContent="space-between">
           <Text color={textColor}>Taxes (estimate)</Text>
-          <Heading size="sm">$23.00</Heading>
+          <Heading size="sm">₹23.00</Heading>
         </HStack>
       </VStack>
       <Divider />
       <HStack justifyContent="space-between" w="full">
         <Text color={textColor}>Total</Text>
-        <Heading size="lg">$162.72</Heading>
+        <Heading size="lg">₹162.72</Heading>
       </HStack>
     </VStack>
   );
