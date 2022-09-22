@@ -1,22 +1,19 @@
-import { Container, Flex } from "@chakra-ui/react";
-import Cart from "./Components/Cart";
-import YourDetail from "./Components/YourDetail";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./Pages/Home";
+import CartPage from "./Pages/CartPage";
+import PostPage from "./Pages/PostPage";
+import NavBar from "./Components/Navigation/NavBar";
 
 function App() {
   return (
-    <Container maxW="container.xl" p="10">
-      <Flex
-        h={{ base: "auto", md: "100vh" }}
-        py={[0, 10, 20]}
-        direction={{
-          base: "column-reverse",
-          md: "row",
-        }}
-      >
-        <YourDetail />
-        <Cart />
-      </Flex>
-    </Container>
+    <Router>
+      <NavBar />
+      <Routes>
+        <Route path="/" index element={<Home />} />
+        <Route path="/post" index element={<PostPage />} />
+        <Route path="/cart" index element={<CartPage />} />
+      </Routes>
+    </Router>
   );
 }
 
