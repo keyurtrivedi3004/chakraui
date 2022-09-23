@@ -20,7 +20,7 @@ const PostCard = () => {
         <Image src="/post.png" alt="bg-image" />
         <Stack p={2}>
           <HStack>
-            <Avatar size="sm" />
+            <Avatar name="John Deo" size="sm" />
             <Text fontWeight="600">John Doe</Text>
             <Text fontSize="xs">1 Min ago</Text>
           </HStack>
