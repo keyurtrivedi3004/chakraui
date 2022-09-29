@@ -59,6 +59,7 @@ function Cart() {
             <Text color={textColor}>PYWA0000048F</Text>
           </VStack>
           <Heading size="sm" textAlign="end">
+            $199.00
             ₹199.00
           </Heading>
         </Stack>
